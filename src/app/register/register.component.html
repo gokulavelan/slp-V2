@@ -74,27 +74,30 @@
     <div class="row m-2" style="text-align:center">
       <mat-radio-group aria-label="Select an option">
           <mat-radio-button color="primary" value="1" >
-             <img  src="assets/images/single.png">
-            <h3>Single</h3></mat-radio-button>
-          <mat-radio-button color="primary" value="2"> <img  src="assets/images/married.png">
-             <h3>Married</h3></mat-radio-button>
+             <!-- <img  src="assets/images/single.png"> -->
+           Single</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <mat-radio-button color="primary" value="2">
+            <!-- <img  src="assets/images/married.png"> -->
+             Married</mat-radio-button>
             </mat-radio-group>
-    </div>
+    </div><br>
 
     <div class="row m-2 gender" style="text-align:center">
       <mat-radio-group aria-label="Select an option">
           <mat-radio-button color="primary" value="1" >
 
-            <h3>Male</h3></mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Male</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <mat-radio-button color="primary" value="2">
-             <h3>Female</h3></mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             Female</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <mat-radio-button color="primary" value="3">
-              <h3>Others</h3></mat-radio-button>
+              Others</mat-radio-button>
 
             </mat-radio-group>
     </div>
+
     <div class="ml-4">
       <div style="margin:8%;margin-left: 5%;">
+        <mat-label class="References_lable2">Address</mat-label>
     <div class="m-2">
       <mat-form-field class="example-full-width">
           <mat-label>Apartment / Flat / House No</mat-label>
@@ -123,11 +126,15 @@
       </div>
 
       <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>State</mat-label>
-            <input matInput placeholder="" value="">
+        <mat-form-field>
+        <mat-label>State</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let state of state" [value]="state.value">
+            {{state.viewValue}}
+            </mat-option>
+        </mat-select>
         </mat-form-field>
-      </div>
+    </div>
 
       <div class="m-2">
         <mat-form-field class="example-full-width">

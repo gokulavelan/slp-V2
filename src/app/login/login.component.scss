@@ -1,8 +1,8 @@
 .example-button-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+  margin: auto;
+  position: absolute;
+  top: center; left: 30px; bottom: center; right: center;
+  margin-top: 380px;
   font-size: 35px;
   color: black;
 }
@@ -12,9 +12,9 @@
 }
 
 h3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 55px; bottom: 0; right: 0;
   margin-top: 300px;
   font-size: 35px;
   color: black;

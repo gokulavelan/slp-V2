@@ -124,8 +124,8 @@
   </div>
 
   <div class="m-2">
-    <mat-label>References:(minimum 2, optional all 3)</mat-label><br>
-    <mat-label>References 1</mat-label>
+    <mat-label class="References_lable">References:(minimum 2, optional all 3)</mat-label><br>
+    <mat-label class="References_lable2">References 1</mat-label>
     <mat-form-field class="example-full-width">
         <mat-label>Name</mat-label>
         <input matInput placeholder="" value="" rows="5">
@@ -146,7 +146,7 @@
 
   <div class="m-2">
 
-    <mat-label>References 2</mat-label>
+    <mat-label class="References_lable2">References 2</mat-label>
     <mat-form-field class="example-full-width">
         <mat-label>Name</mat-label>
         <input matInput placeholder="" value="" rows="5">
@@ -167,7 +167,7 @@
 
   <div class="m-2">
 
-    <mat-label>References 3</mat-label>
+    <mat-label class="References_lable2">References 3</mat-label>
     <mat-form-field class="example-full-width">
         <mat-label>Name</mat-label>
         <input matInput placeholder="" value="" rows="5">
@@ -188,5 +188,5 @@
 
   <div class="d-flex justify-content-center">
     <button mat-flat-button color="primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button type="button" [routerLink]="['/login']" class="btn btn-warning">Submit</button>
+      <button type="button" [routerLink]="['/preview-pdf']" class="btn btn-warning">Submit</button>
   </div>

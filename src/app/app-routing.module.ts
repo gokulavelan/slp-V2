@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { IdentificationComponent } from './identification/identification.component';
 import { EmployerRegisterComponent } from './employer-register/employer-register.component';
+import { ViewpdfComponent } from './viewpdf/viewpdf.component';
 
 
 
@@ -23,7 +24,7 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent},
   { path: 'identification', component: IdentificationComponent},
   { path: 'employer-register', component: EmployerRegisterComponent},
-
+  { path: 'preview-pdf', component: ViewpdfComponent},
 ];
 
 @NgModule({

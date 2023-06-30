@@ -15,7 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { IdentificationComponent } from './identification/identification.component';
 import { EmployerRegisterComponent } from './employer-register/employer-register.component';
-
+import { ViewpdfComponent } from './viewpdf/viewpdf.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { EmployerRegisterComponent } from './employer-register/employer-register
     ExperienceComponent,
     IdentificationComponent,
     EmployerRegisterComponent,
+    ViewpdfComponent,
   ],
 
   imports: [
@@ -36,7 +38,8 @@ import { EmployerRegisterComponent } from './employer-register/employer-register
     AppRoutingModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
