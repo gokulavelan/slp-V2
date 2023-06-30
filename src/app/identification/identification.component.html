@@ -1,0 +1,192 @@
+<h1>Identification</h1>
+<div class="row m-1 text-center">
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+      <mat-label>Aadhar Number</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+</div>
+
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>PAN Card Number</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <div class="d-flex justify-content-around">
+       <div class="w-50 m-1 ml-2">
+        <mat-form-field class="example-full-width">
+          <mat-label>Passport Number</mat-label>
+          <input matInput placeholder="" value="" rows="5">
+      </mat-form-field>
+       </div>
+       <div class="w-50 m-1">
+        <mat-form-field class="example-full-width">
+          <mat-label>Expiry date</mat-label>
+          <input matInput placeholder="" value="" rows="5" type="date">
+      </mat-form-field>
+       </div>
+    </div>
+ </div>
+
+ <div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Alternative Email</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+</div>
+
+<div>
+  <div class="image-upload m-4">
+      <label style="cursor: pointer;" for="file_upload">
+        <img src="" alt="" class="uploaded-image">
+        <div class="h-100">
+               <div class="dplay-tbl">
+                <div class="dplay-tbl-cell">
+                    <i class="fa fa-cloud-upload"></i>
+                    <h5><b>Choose Your Photo</b></h5>
+                    <h6 class="mt-10 mb-70">Or Drop Your File Here</h6>
+                </div>
+            </div>
+        </div>
+        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+         </label>
+    </div>
+</div>
+
+<div>
+  <div class="image-upload m-4">
+      <label style="cursor: pointer;" for="file_upload">
+        <img src="" alt="" class="uploaded-image">
+        <div class="h-100">
+               <div class="dplay-tbl">
+                <div class="dplay-tbl-cell">
+                    <i class="fa fa-cloud-upload"></i>
+                    <h5><b>Choose Your AADHAR, PAN, Educational Documents</b></h5>
+                    <h6 class="mt-10 mb-70">Or Drop Your File Here</h6>
+                </div>
+            </div>
+        </div>
+        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+         </label>
+    </div>
+</div>
+</div>
+<div class="m-2">
+  <mat-radio-group aria-label="Select an option">
+    <mat-label>Currently Employed</mat-label>&nbsp;&nbsp;
+    <mat-radio-button value="1" color="primary">Yes</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="2" color="primary">No</mat-radio-button><br><br>
+
+  </mat-radio-group></div>
+
+<div class="m-2">
+  <mat-form-field>
+  <mat-label>Notice Period</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let notice_period of notice_period" [value]="notice_period.value">
+      {{notice_period.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-radio-group aria-label="Select an option">
+    <mat-label>Immediate Joiner</mat-label>&nbsp;&nbsp;
+    <mat-radio-button value="1" color="primary">Yes</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="2" color="primary">No</mat-radio-button><br><br>
+
+  </mat-radio-group></div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Mother Tongue</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Other Languages</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-label>References:(minimum 2, optional all 3)</mat-label><br>
+    <mat-label>References 1</mat-label>
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Company Name</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Mobile number</mat-label>
+    <input matInput placeholder="" value="" rows="5">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <mat-label>Email</mat-label>
+  <input matInput placeholder="" value="" rows="5">
+</mat-form-field>
+  </div>
+
+  <div class="m-2">
+
+    <mat-label>References 2</mat-label>
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Company Name</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Mobile number</mat-label>
+    <input matInput placeholder="" value="" rows="5">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <mat-label>Email</mat-label>
+  <input matInput placeholder="" value="" rows="5">
+</mat-form-field>
+  </div>
+
+  <div class="m-2">
+
+    <mat-label>References 3</mat-label>
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Company Name</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Mobile number</mat-label>
+    <input matInput placeholder="" value="" rows="5">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <mat-label>Email</mat-label>
+  <input matInput placeholder="" value="" rows="5">
+</mat-form-field>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <button mat-flat-button color="primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" [routerLink]="['/login']" class="btn btn-warning">Submit</button>
+  </div>

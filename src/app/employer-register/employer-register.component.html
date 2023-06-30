@@ -1,0 +1,77 @@
+<h1>Employer (Recruiter)</h1>
+<div class="row m-1 text-center">
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Company Name</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field>
+    <mat-label>Job Title</mat-label>
+    <mat-select multiple>
+        <mat-option *ngFor="let job_title of job_title" [value]="job_title.value">
+        {{job_title.viewValue}}
+        </mat-option>
+    </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Designation</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Location</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Experience Range  (Ex : 0 to 3 Years / 3 to 6 Years)</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Salary Range  (Ex : ₹ 10000 - 20000 Per Month)</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Educational Qualification</mat-label>
+        <input matInput placeholder="" value="" rows="4">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Job Description</mat-label>
+        <textarea matInput placeholder="" value="" rows="4"></textarea>
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>About Company</mat-label>
+        <textarea matInput placeholder="" value="" rows="5"></textarea>
+    </mat-form-field>
+  </div>
+
+</div>
+<div class="d-flex justify-content-center">
+   <button [routerLink]="['/login']" type="button" class="btn btn-warning">Submit</button>
+</div><br><br>
+<div class="m-2">
+
+</div>

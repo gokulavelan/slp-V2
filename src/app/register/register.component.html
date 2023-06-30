@@ -1,0 +1,160 @@
+<h1>About Me</h1>
+<div class="ml-4">
+<div style="margin:8%;margin-left: 5%;">
+    <div class="m-2">
+        <mat-form-field>
+        <mat-label>Title</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let person_title of person_title" [value]="person_title.value">
+            {{person_title.viewValue}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+    </div>
+
+    <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Phone Number</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+    </div>
+
+    <div class="m-2">
+      <mat-form-field class="example-full-width">
+          <mat-label>Alternative Phone Number</mat-label>
+          <input matInput placeholder="" value="">
+      </mat-form-field>
+  </div>
+
+    <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+    </div>
+
+    <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput placeholder="" value="" type="date">
+        </mat-form-field>
+    </div>
+
+    <div class="m-2">
+      <mat-form-field>
+      <mat-label>Blood Group</mat-label>
+      <mat-select>
+          <mat-option *ngFor="let blood_group of blood_group" [value]="blood_group.value">
+          {{blood_group.viewValue}}
+          </mat-option>
+      </mat-select>
+      </mat-form-field>
+  </div>
+
+
+    <div class="m-2">
+        <mat-form-field>
+        <mat-label>Physical fitness status</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let person_fit of person_fit" [value]="person_fit.value">
+            {{person_fit.viewValue}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+    <div class="row m-2" style="text-align:center">
+      <mat-radio-group aria-label="Select an option">
+          <mat-radio-button color="primary" value="1" >
+             <img  src="assets/images/single.png">
+            <h3>Single</h3></mat-radio-button>
+          <mat-radio-button color="primary" value="2"> <img  src="assets/images/married.png">
+             <h3>Married</h3></mat-radio-button>
+            </mat-radio-group>
+    </div>
+
+    <div class="row m-2 gender" style="text-align:center">
+      <mat-radio-group aria-label="Select an option">
+          <mat-radio-button color="primary" value="1" >
+             <img  src="assets/images/male.jpg">
+            <h3>Male</h3></mat-radio-button>
+          <mat-radio-button color="primary" value="2"> <img  src="assets/images/female.png">
+             <h3>Female</h3></mat-radio-button>
+             <mat-radio-button color="primary" value="3"> <img  src="assets/images/transgender.png">
+              <h3>Others</h3></mat-radio-button>
+
+            </mat-radio-group>
+    </div>
+
+    <div class="m-2">
+      <mat-form-field class="example-full-width">
+          <mat-label>Apartment / Flat / House No</mat-label>
+          <input matInput placeholder="" value="">
+      </mat-form-field>
+  </div>
+
+        <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Street Name</mat-label>
+              <input matInput placeholder="" value="">
+          </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>District Name</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>City / Town / Village</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>State</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Country</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Pincode</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field class="example-full-width">
+            <mat-label>Landmark</mat-label>
+            <input matInput placeholder="" value="">
+        </mat-form-field>
+      </div>
+
+      
+
+
+
+
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-warning" matStepperNext>Next</button>
+    </div>
+</div>

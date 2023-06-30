@@ -1,0 +1,156 @@
+<h1>Experience</h1>
+<div class="row m-1 text-center">
+  <div class="col">
+      <div class="card col m-2 box" [class.highlightExperience]="highlightedExpCard === 1" (click)="highlightCard(1)">
+          <div><img src="assets/images/experience.PNG" width="80" height="80"></div>
+      </div>
+      <h4>Experienced</h4>
+  </div>
+
+  <div class="col">
+      <div class="card col m-2 box" [class.highlightExperience]="highlightedExpCard === 2" (click)="highlightCard(2)">
+          <div><img src="assets/images/fresher.PNG" width="80" height="80"></div>
+      </div>
+      <h4>Fresher</h4>
+  </div>
+
+</div>
+
+<div class="m-2">
+  <mat-form-field>
+  <mat-label>Intern / Experience</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let experience of experience" [value]="experience.value">
+      {{experience.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field>
+  <mat-label>Month And Year Of Experience</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let experience_type of experience_type" [value]="experience_type.value">
+      {{experience_type.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Year Or Month of Experience</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Industry Type</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+</div>
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Company Name</mat-label>
+      <input matInput placeholder="" value="" rows="5">
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field>
+  <mat-label>Job Title</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let job_title of job_title" [value]="job_title.value">
+      {{job_title.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="row">
+  <h3>Skill</h3>
+  <div class="rate" style="width: auto;">
+      <input type="radio" id="star5" name="rate" value="5" />
+      <label for="star5" title="text">5 stars</label>
+      <input type="radio" id="star4" name="rate" value="4" />
+      <label for="star4" title="text">4 stars</label>
+      <input type="radio" id="star3" name="rate" value="3" />
+      <label for="star3" title="text">3 stars</label>
+      <input type="radio" id="star2" name="rate" value="2" />
+      <label for="star2" title="text">2 stars</label>
+      <input type="radio" id="star1" name="rate" value="1" />
+      <label for="star1" title="text">1 star</label>
+    </div>
+</div><br>
+
+<div class="row m-1 text-center">
+  <div class="col">
+      <div class="card col m-2 " [class.highlight]="highlightedCard === 1" (click)="highlightEmploymentCardType(1)">
+          <div><img src="assets/images/Employment1.PNG" width="70" height="80"></div>
+      </div>
+      <h4>FULL TIME</h4>
+  </div>
+
+  <div class="col">
+      <div class="card col m-2" [class.highlight]="highlightedCard === 2" (click)="highlightEmploymentCardType(2)">
+          <div><img src="assets/images/Employment2.PNG" width="70" height="80"></div>
+      </div>
+      <h4>PART TIME</h4>
+  </div>
+  <div class="col">
+      <div class="card col m-2" [class.highlight]="highlightedCard === 3" (click)="highlightEmploymentCardType(3)">
+          <div><img src="assets/images/Employment3.PNG" width="70" height="80"></div>
+      </div>
+  <h4>TEMPORARY</h4>
+  </div>
+</div>
+
+<div class="m-2">
+  <mat-radio-group aria-label="Select an option">
+    <mat-label>Shift Type</mat-label><br>
+    <mat-radio-button value="1" color="primary">Morning Shift</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="2" color="primary">Afternoon Shift</mat-radio-button><br><br>
+    <mat-radio-button value="3" color="primary">Night Shift</mat-radio-button>
+  </mat-radio-group></div>
+
+  <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Salary package</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+  <div class="m-2">
+    <mat-form-field>
+    <mat-label>Skills</mat-label>
+    <mat-select multiple>
+        <mat-option *ngFor="let skills of skills" [value]="skills.value">
+        {{skills.viewValue}}
+        </mat-option>
+    </mat-select>
+    </mat-form-field>
+
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1" color="primary">Beginner</mat-radio-button>&nbsp;&nbsp;
+      <mat-radio-button value="2" color="primary">Intermediate</mat-radio-button>&nbsp;&nbsp;
+      <mat-radio-button value="3" color="primary">Advanced</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+   <div class="m-2">
+    <mat-form-field class="example-full-width">
+        <mat-label>Salary package</mat-label>
+        <input matInput placeholder="" value="" rows="5">
+    </mat-form-field>
+  </div>
+
+
+
+  <div class="d-flex justify-content-center">
+    <button mat-flat-button color="primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-warning" matStepperNext>Next</button>
+  </div>
+
+

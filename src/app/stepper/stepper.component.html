@@ -1,0 +1,15 @@
+<mat-stepper labelPosition="bottom" [linear]="isLinear" #stepper>
+  <mat-step label="Step 1">
+      <app-register></app-register>
+  </mat-step>
+  <mat-step label="Step 2">
+      <app-education></app-education>
+  </mat-step>
+  <mat-step label="Step 3">
+      <app-experience></app-experience>
+  </mat-step>
+  <mat-step label="Step 4">
+    <app-identification></app-identification>
+</mat-step>
+
+</mat-stepper>

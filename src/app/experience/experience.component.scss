@@ -1,0 +1,74 @@
+.card.highlightExperience {
+  background-color: rgb(3, 136, 245);
+  box-shadow: 0 0.5rem 1rem #0561e9 !important;
+  background-color: rgba(var(--bs-body-bg-rgb),var(--bs-bg-opacity))!important;
+  border-radius: var(--bs-border-radius)!important;
+}
+
+.card.highlight {
+  background-color: rgb(3, 136, 245);
+  box-shadow: 0 0.5rem 1rem #0561e9 !important;
+  background-color: rgba(var(--bs-body-bg-rgb),var(--bs-bg-opacity))!important;
+  border-radius: var(--bs-border-radius)!important;
+}
+
+.mat-form-field {
+  width: -webkit-fill-available;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  float: left;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.box{
+  height: 130px;
+ width: 130px !important;
+}
+
+
+
+.box img{
+  margin-top: 20px;
+}
+h1
+{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}

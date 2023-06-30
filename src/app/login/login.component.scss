@@ -1,0 +1,39 @@
+.example-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 35px;
+  color: black;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  font-size: 35px;
+  color: black;
+}
+
+.btn1
+{
+  color: black;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(33, 230, 220);
+  font-size: 30px;
+
+}
+.btn2
+{
+  color: black;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(248, 195, 21);
+  font-size: 30px;
+}

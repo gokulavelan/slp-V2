@@ -1,0 +1,91 @@
+<h1>Education And Qualification</h1>
+<div class="row m-1 text-center">
+  <div class="m-2">
+    <mat-form-field>
+    <mat-label>Education level</mat-label>
+    <mat-select>
+        <mat-option *ngFor="let education_level of education_level" [value]="education_level.value">
+        {{education_level.viewValue}}
+        </mat-option>
+    </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Name of the College / ITI / Institute</mat-label>
+      <input matInput placeholder="" value="">
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Name of Diploma / Degree</mat-label>
+      <input matInput placeholder="" value="">
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field class="example-full-width">
+      <mat-label>Achievement / Awards</mat-label>
+      <textarea matInput placeholder="" value="" rows="5"></textarea>
+  </mat-form-field>
+</div>
+
+ <div class="m-2">
+  <mat-form-field>
+  <mat-label>Certificate Name</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let certificate of certificate" [value]="certificate.value">
+      {{certificate.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="m-2">
+  <mat-form-field>
+  <mat-label>Skills</mat-label>
+  <mat-select multiple>
+      <mat-option *ngFor="let skills of skills" [value]="skills.value">
+      {{skills.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+</div>
+
+
+<div>
+    <div class="image-upload m-4">
+        <label style="cursor: pointer;" for="file_upload">
+
+          <img src="" alt="" class="uploaded-image">
+
+          <div class="h-100">
+                 <div class="dplay-tbl">
+                  <div class="dplay-tbl-cell">
+
+
+                      <i class="fa fa-cloud-upload"></i>
+                      <h5><b>Choose Your File to Upload</b></h5>
+                      <h6 class="mt-10 mb-70">Or Drop Your File Here</h6>
+
+
+                  </div>
+              </div>
+          </div>
+          <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+
+           </label>
+      </div>
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <button type="button" class="btn btn-primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-warning" matStepperNext>Next</button>
+</div>
+
+
+
+
