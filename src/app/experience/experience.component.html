@@ -52,14 +52,17 @@
   </div>
 </div>
 
-
-
 <div class="m-2">
-  <mat-form-field class="example-full-width">
-      <mat-label>Industry Type</mat-label>
-      <input matInput placeholder="" value="" rows="5">
+  <mat-form-field>
+  <mat-label>Industry Type</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let industry_type of industry_type" [value]="industry_type.value">
+      {{industry_type.viewValue}}
+      </mat-option>
+  </mat-select>
   </mat-form-field>
 </div>
+
 <div class="m-2">
   <mat-form-field class="example-full-width">
       <mat-label>Company Name</mat-label>
