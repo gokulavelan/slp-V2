@@ -1,25 +1,40 @@
 <h1>Experience</h1>
 <div class="row m-1 text-center">
 
+  <div class="row m-2" style="text-align:center">
+    <mat-radio-group aria-label="Select an option">
+        <mat-radio-button color="primary" value="1" >
+           <!-- <img  src="assets/images/single.png"> -->
+           Fresher/Entry level</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <mat-radio-button color="primary" value="2">
+          <!-- <img  src="assets/images/married.png"> -->
+          Intermediate</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+          <mat-radio-button color="primary" value="3">
+            <!-- <img  src="assets/images/married.png"> -->
+            Experienced</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <mat-radio-button color="primary" value="4">
+              <!-- <img  src="assets/images/married.png"> -->
+              Senior Expert</mat-radio-button>
+          </mat-radio-group>
+  </div><br>
 
-
-  <div class="col">
-      <div class="card col m-2 box" [class.highlightExperience]="highlightedExpCard === 1" (click)="highlightCard(1)">
-          <div><img src="assets/images/experience.PNG" width="80" height="80"></div>
+  <!-- <div class="col">
+      <div class="card col m-2 box" [class.highlightExperience]="highlightedExpCard === 1" (click)="highlightCard(1)"> -->
+          <!-- <div><img src="assets/images/experience.PNG" width="80" height="80"></div>
       </div>
       <h4>Experienced</h4>
-  </div>
+  </div> -->
 
-  <div class="col">
-      <div class="card col m-2 box" [class.highlightExperience]="highlightedExpCard === 2" (click)="highlightCard(2)">
-          <div><img src="assets/images/fresher.PNG" width="80" height="80"></div>
-      </div>
+  <!-- <div class="col">
+      <div class="card col m-2 box" [class.highlightExperience]="highlightedExpCard === 2" (click)="highlightCard(2)"> -->
+          <!-- <div><img src="assets/images/fresher.PNG" width="80" height="80"></div> -->
+      <!-- </div>
       <h4>Fresher</h4>
-  </div>
+  </div> -->
 
-</div>
+<!-- </div> -->
 
-<div class="row">
+<!-- <div class="row">
   <h3>Skill</h3>
   <div class="rate" style="width: auto;">
       <input type="radio" id="star5" name="rate" value="5" />
@@ -33,7 +48,7 @@
       <input type="radio" id="star1" name="rate" value="1" />
       <label for="star1" title="text">1 star</label>
     </div>
-</div><br>
+</div><br> -->
 
 <div class="m-2">
   <div class="d-flex justify-content-around">
@@ -64,6 +79,23 @@
 </div>
 
 <div class="m-2">
+  <mat-form-field>
+  <mat-label>Skills</mat-label>
+  <mat-select>
+      <mat-option *ngFor="let skills of skills" [value]="skills.value">
+      {{skills.viewValue}}
+      </mat-option>
+  </mat-select>
+  </mat-form-field>
+
+  <mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1" color="primary">Beginner</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="2" color="primary">Intermediate</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="3" color="primary">Advanced</mat-radio-button>
+  </mat-radio-group>
+</div>
+
+<div class="m-2">
   <mat-form-field class="example-full-width">
       <mat-label>Company Name</mat-label>
       <input matInput placeholder="" value="" rows="5">
@@ -83,7 +115,7 @@
 
 
 
-<div class="row m-1 text-center">
+<!-- <div class="row m-1 text-center">
   <div class="col">
       <div class="card col m-2 " [class.highlight]="highlightedCard === 1" (click)="highlightEmploymentCardType(1)">
           <div><img src="assets/images/Employment1.PNG" width="70" height="80"></div>
@@ -103,7 +135,18 @@
       </div>
   <h4>TEMPORARY</h4>
   </div>
+</div></div> -->
 </div>
+<div class="m-2">
+  <mat-radio-group aria-label="Select an option">
+    <mat-label>Shift Time</mat-label><br><br>
+    <mat-radio-button value="1" color="primary">Full Time</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="2" color="primary">Part Time</mat-radio-button>&nbsp;&nbsp;
+    <mat-radio-button value="3" color="primary">Temporary</mat-radio-button>
+  </mat-radio-group></div><br>
+
+
+
 
 <div class="m-2">
   <mat-radio-group aria-label="Select an option">
@@ -113,31 +156,21 @@
     <mat-radio-button value="3" color="primary">Night Shift</mat-radio-button>
   </mat-radio-group></div>
 
+
+
+
+
   <div class="m-2">
-    <mat-form-field>
-    <mat-label>Skills</mat-label>
-    <mat-select>
-        <mat-option *ngFor="let skills of skills" [value]="skills.value">
-        {{skills.viewValue}}
-        </mat-option>
-    </mat-select>
-    </mat-form-field>
-
-    <mat-radio-group aria-label="Select an option">
-      <mat-radio-button value="1" color="primary">Beginner</mat-radio-button>&nbsp;&nbsp;
-      <mat-radio-button value="2" color="primary">Intermediate</mat-radio-button>&nbsp;&nbsp;
-      <mat-radio-button value="3" color="primary">Advanced</mat-radio-button>
-    </mat-radio-group>
+    <mat-label>Salary package (Per Month)</mat-label>
+    <mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  step="1000"
+  min="0"
+  max="100000"
+  aria-label="units" color="primary"></mat-slider>
   </div>
-
-   <div class="m-2">
-    <mat-form-field class="example-full-width">
-        <mat-label>Salary package</mat-label>
-        <input matInput placeholder="" value="" rows="5">
-    </mat-form-field>
-  </div>
-
-
 
   <div class="d-flex justify-content-center">
     <button mat-flat-button color="primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

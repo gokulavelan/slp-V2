@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -110,6 +112,13 @@ export class ExperienceComponent implements OnInit {
 
 
   ];
+  formatLabel(value: number) {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'k';
+    }
+
+    return value;
+  }
 
 }
 interface notice_period {
