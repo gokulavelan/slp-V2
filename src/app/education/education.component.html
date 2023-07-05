@@ -13,8 +13,13 @@
 
 <div class="m-2">
   <mat-form-field class="example-full-width">
-      <mat-label>Name of the College / ITI / Institute</mat-label>
-      <input matInput placeholder="" value="">
+    <mat-label>Name of the College / ITI / Institute</mat-label>
+    <input type="text" placeholder="Name of the College / ITI / Institute" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
   </mat-form-field>
 </div>
 
