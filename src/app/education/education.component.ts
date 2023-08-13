@@ -77,7 +77,9 @@ export class EducationComponent implements OnInit {
   }
 
   education_level: education_level[] = [
-    {value: 'School', viewValue: 'School'},
+    {value: 'Under 10th', viewValue: 'Under 10th'},
+    {value: '10th Pass', viewValue: '10th Pass'},
+    {value: '12th Pass', viewValue: '12th Pass'},
     {value: 'ITI', viewValue: 'ITI'},
     {value: 'Polytechnic', viewValue: 'Polytechnic'},
     {value: 'College', viewValue: 'College'},

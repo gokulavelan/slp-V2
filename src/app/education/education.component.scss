@@ -78,3 +78,22 @@ h1
   color: black;
 }
 
+mat-form-field {
+  width: 100%;
+}
+.button{
+  width: 40%;
+  height: 50px;
+  border: 1px solid;
+  background: turquoise;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  outline: none;
+  transition: .5s;
+  border-radius: 10px;
+  color: white;
+}
+.mat-card{
+  border-radius: 38px;
+}

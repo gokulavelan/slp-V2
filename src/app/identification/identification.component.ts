@@ -17,9 +17,22 @@ export class IdentificationComponent implements OnInit {
     {value: '60days', viewValue: '60 Days'},
     {value: '90days', viewValue: '90 Days'},
   ];
+  languages: languages[] = [
+    {value: 'English', viewValue: 'English'},
+    {value: 'Hindi', viewValue: 'Hindi'},
+    {value: 'Kannada', viewValue: 'kannada'},
+    {value: 'Tamil', viewValue: 'Tamil'},
+    {value: 'Telugu', viewValue: 'Telugu'},
+    {value: 'Malayalam', viewValue: 'Malayalam'},
+    {value: 'Marathi', viewValue: 'Marathi'},
+  ];
 
 }
 interface notice_period {
+  value: string;
+  viewValue: string;
+}
+interface languages{
   value: string;
   viewValue: string;
 }

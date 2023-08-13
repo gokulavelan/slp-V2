@@ -16,8 +16,9 @@ export class ExperienceComponent implements OnInit {
 
   highlightedExpCard: number = 0;
 
-  highlightCard(cardNumber: number) {
-    this.highlightedExpCard = cardNumber;
+  highlightCard(event) {
+    this.highlightedExpCard = event.value;
+    console.log(event.value)
   }
 
   highlightedCard: number = 0;
@@ -28,6 +29,7 @@ export class ExperienceComponent implements OnInit {
   highlightEmploymentCardType(cardNumber: number) {
     this.highlightedCard = cardNumber;
   }
+
 
 
 
@@ -112,14 +114,10 @@ export class ExperienceComponent implements OnInit {
 
 
   ];
-  formatLabel(value: number) {
-    if (value >= 1000) {
-      return Math.round(value / 1000) + 'k';
-    }
-
-    return value;
+  gridsize: number = 0;
+  formatLabel(event) {
+    this.gridsize = event.value;
   }
-
 }
 interface notice_period {
   value: string;
@@ -148,3 +146,4 @@ interface skills {
   value: string;
   viewValue: string;
 }
+

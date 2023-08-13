@@ -35,5 +35,32 @@ $swiss_theme-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: cornsilk; }
+.basic-container .mat-step-header .mat-step-label-selected {
+  font-size: 15px;
+}
+
+
+ .mat-step-header .mat-step-icon {
+    background-color: turquoise;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: rgb(0, 0, 0);
+}
+.mat-accent .mat-slider-track-fill, .mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label {
+  background-color: turquoise;
+}
+mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+  color: #f9f9f9;
+}
+
+
+mat-toolbar {
+  display:flex;
+  position: fixed;
+  background-color: #fff  ;
+}

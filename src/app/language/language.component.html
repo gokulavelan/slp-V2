@@ -1,58 +1,51 @@
-<br><h1>Choose Your Language</h1>
+<br><h1>Choose Your Language</h1>  <br><br>
 <div class="d-flex justify-content-around text-center lang1">
 
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 1" (click)="highlightCard(1)">
+  <div class="card col m-2 box" [class.highlight]="highlightedCard === 1" (click)="highlightCard(1,'hindi')">
      <div class="col"><h2>Hindi</h2><h3>अ</h3></div>
   </div>
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 2" (click)="highlightCard(2)">
-      <div><h2>English</h2><h3>E</h3></div>
-   </div>
+  <div class="card col m-2 box" [class.highlight]="highlightedCard === 11" (click)="highlightCard(11,'malayalam')" >
+    <div class="col"><h2>Malayalam</h2><h3>എ</h3></div>
   </div>
+</div>
    <div class="d-flex justify-content-around text-center lang1">
-   <div class="card col m-2 box" [class.highlight]="highlightedCard === 3" (click)="highlightCard(3)">
+   <div class="card col m-2 box" [class.highlight]="highlightedCard === 3" (click)="highlightCard(3,'kannada')">
       <div class="col"><h2>Kannada</h2><h3>ಕ</h3></div>
    </div>
 
 
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 4" (click)="highlightCard(4)">
+  <div class="card col m-2 box" [class.highlight]="highlightedCard === 4" (click)="highlightCard(4,'benagali')">
      <div class="col"><h2>bengali</h2><h3>অ</h3></div>
   </div>
 </div>
 <div class="d-flex justify-content-around text-center lang1">
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 5" (click)="highlightCard(5)">
+  <div class="card col m-2 box" [class.highlight]="highlightedCard === 5" (click)="highlightCard(5,'telugu')">
       <div class="col"><h2>Telugu</h2><h3>అ</h3></div>
    </div>
-   <div class="card col m-2 box" [class.highlight]="highlightedCard === 6" (click)="highlightCard(6)">
+   <div class="card col m-2 box" [class.highlight]="highlightedCard === 6" (click)="highlightCard(6,'tamil')">
       <div class="col"><h2>Tamil</h2><h3>அ</h3></div>
    </div>
   </div>
 <div class="d-flex justify-content-around text-center lang1">
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 7" (click)="highlightCard(7)">
+  <div class="card col m-2 box" [class.highlight]="highlightedCard === 7" (click)="highlightCard(7,'gujrati')">
      <div class="col"><h2>Gujrati</h2><h3>અ</h3></div>
   </div>
-  <div class="card col m-2" [class.highlight]="highlightedCard === 8" (click)="highlightCard(8)">
+  <div class="card col m-2" [class.highlight]="highlightedCard === 8" (click)="highlightCard(8,'marathi')">
       <div class="col"><h2>Marathi</h2><h3>अ</h3></div>
    </div>
   </div>
   <div class="d-flex justify-content-around text-center lang1">
-   <div class="card col m-2 box" [class.highlight]="highlightedCard === 9" (click)="highlightCard(9)">
+   <div class="card col m-2 box" [class.highlight]="highlightedCard === 9" (click)="highlightCard(9,'odiya')">
       <div class="col"><h2>Odiya</h2><h3>ଅ</h3></div>
    </div>
 
 
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 10" (click)="highlightCard(10)">
+  <div class="card col m-2 box" [class.highlight]="highlightedCard === 10" (click)="highlightCard(10,'assamese')">
      <div class="col"><h2>Assamese</h2><h3>অ</h3></div>
   </div>
 </div>
-<div class="d-flex justify-content-around text-center lang1">
-  <div class="card col m-2 box" [class.highlight]="highlightedCard === 11" (click)="highlightCard(11)" >
-      <div class="col"><h2>Malayalam</h2><h3>എ</h3></div>
-   </div>
-   <div class=" col m-2" >
 
-   </div>
-</div>
 
 <div class="d-flex justify-content-center mt-4">
-  <button [routerLink]="['/stepper']" type="button" class="btn btn-warning">Next</button>
+  <button [routerLink]="['/stepper']" type="button" class="button">Next</button>
 </div>

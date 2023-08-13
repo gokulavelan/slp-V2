@@ -1,15 +1,19 @@
-<mat-stepper labelPosition="bottom" [linear]="isLinear" #stepper>
-  <mat-step label="Step 1">
+
+<!-- <mat-card-subtitle style="white-space: pre-line">
+  <span>J</span>OLIO&nbsp;&nbsp;<span>J</span>OBS
+</mat-card-subtitle> -->
+<br>
+<mat-stepper labelPosition="bottom" [linear]="isLinear" #stepper style="display: contents;">
+  <mat-step label="About Me">
       <app-register></app-register>
   </mat-step>
-  <mat-step label="Step 2">
+  <mat-step label="Educational Qualification">
       <app-education></app-education>
   </mat-step>
-  <mat-step label="Step 3">
+  <mat-step label="Experience">
       <app-experience></app-experience>
   </mat-step>
-  <mat-step label="Step 4">
+  <mat-step label="Identification">
     <app-identification></app-identification>
 </mat-step>
-
 </mat-stepper>
