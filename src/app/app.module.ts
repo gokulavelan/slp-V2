@@ -17,6 +17,7 @@ import { IdentificationComponent } from './identification/identification.compone
 import { EmployerRegisterComponent } from './employer-register/employer-register.component';
 import { ViewpdfComponent } from './viewpdf/viewpdf.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     IdentificationComponent,
     EmployerRegisterComponent,
     ViewpdfComponent,
+    LoadingComponent,
   ],
 
   imports: [

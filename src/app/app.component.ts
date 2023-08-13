@@ -6,7 +6,15 @@ import {MatGridListModule} from '@angular/material/grid-list';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent  {
+  isLoading: boolean = true;
+  constructor() {
+    // Simulate app initialization delay
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000); // Set the duration as needed
+  }
+
   title = 'swiss_theme';
   tiles = [ {
     text: 'Four',
@@ -14,5 +22,6 @@ export class AppComponent {
     rows: 1,
     color: '#DDBDF1'
   }]
+  // Simulate app initialization delay
 
 }

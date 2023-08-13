@@ -1,3 +1,22 @@
-<router-outlet>
-</router-outlet>
+<!-- <app-loading *ngIf="isLoading"></app-loading> -->
+<mat-toolbar color="white" style="z-index: 100;">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-card-subtitle style="white-space: pre-line;margin-top: auto;" >
+    <span>J</span>OLIO &nbsp;<span>J</span>OBS
+  </mat-card-subtitle>
+  <!-- <span class="example-spacer"></span> -->
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>login</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="RouterOutlet" style="background: linear-gradient(185deg, rgba(249,228,241,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%); ">
+  <router-outlet>
+  </router-outlet>
+</div>
 

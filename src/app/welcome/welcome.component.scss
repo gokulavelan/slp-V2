@@ -10,26 +10,36 @@ picture {
     width: 250px; /* Set the desired width */
     margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 200px; right: 0;
+    top: 15%; left: 0;  right: 0;
   }
 }
 
 mat-card-subtitle {
   margin: auto;
   position: absolute;
-  top: 430px; left: 0; bottom: 0; right: 0;
-  font-family:  Georgia;
+  top: 230px; left: 0; bottom: 0; right: 0;
+  font-family:  Verdana;
   // font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   color:black;
   text-align: center;
 
 }
+mat-card-subtitle span{
+  font-weight: bold;
+  color: turquoise;
+  font-size: 50px;
+}
 button{
   justify-content: center;
   margin-left: 120px;
-  color:rgb(255, 217, 0);
+  color:turquoise;
   margin: auto;
   position: absolute;
-  top: 640px; left: 0; bottom: 0; right: 0;
+  top: 480px; left: 0; bottom: 0; right: 0;
+  width: 40%;
+  height: 50px;
+  border: 1px solid;
+  transition: .5s;
+  border-radius: 10px;
 }

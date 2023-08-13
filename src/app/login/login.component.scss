@@ -1,39 +1,56 @@
-.example-button-row {
-  margin: auto;
+body{
+  margin:0;
+  padding:0;
+  font-family: verdana;
+  background: linear-gradient(120deg, #ffffff, #8e44ad);
+  height: 100vh;
+  overflow: hidden;
+}
+.center{
   position: absolute;
-  top: center; left: 20px; bottom: center; right: center;
-  margin-top: 380px;
-  font-size: 35px;
-  color: black;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background: white;
+  border-radius: 10px;
 }
 
-.example-button-row .mat-mdc-button-base {
-  margin: 8px 8px 8px 0;
-}
-
-h3{
-  margin: auto;
-  position: absolute;
-  top: 0; left: 40px; bottom: 0; right: 0;
-  margin-top: 300px;
-  font-size: 35px;
-  color: black;
+.center H1{
+  text-align: center;
+  padding: 15px 0 20px 0;
+  border-bottom: 1px solid silver;
+  font-weight: 700;
 }
 
 .btn1
 {
-  color: black;
-  border: 1px solid black;
-  padding: 10px 10px 10px 10px;
-  background-color: rgb(0, 250, 237);
-  font-size: 30px;
-
+  width: 75%;
+  height: 50px;
+  border: 1px solid;
+  background: turquoise;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: .5s;
+  left:15%;
+  border-radius: 10px;
+  color: white;
 }
 .btn2
 {
+  width: 75%;
+  height: 50px;
+  border: 1px solid;
+  background: turquoise;
   color: black;
-  border: 1px solid black;
-  padding: 10px 10px 10px 10px;
-  background-color: rgb(248, 195, 21);
-  font-size: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: .5s;
+  left:15%;
+  border-radius: 10px;
+  color: white;
 }

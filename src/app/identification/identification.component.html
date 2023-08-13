@@ -1,89 +1,8 @@
+<br>
+<mat-card>
 <h1>Identification</h1>
-<div class="row m-1 text-center">
-  <div class="m-2">
-    <mat-form-field class="example-full-width">
-      <mat-label>Aadhar Number</mat-label>
-      <input matInput placeholder="" value="" rows="5">
-  </mat-form-field>
-</div>
-
-
-  <div class="m-2">
-    <mat-form-field class="example-full-width">
-        <mat-label>PAN Card Number</mat-label>
-        <input matInput placeholder="" value="" rows="5">
-    </mat-form-field>
-  </div>
-
-  <div class="m-2">
-    <div class="d-flex justify-content-around">
-       <div class="w-50 m-1 ml-2">
-        <mat-form-field class="example-full-width">
-          <mat-label>Passport Number</mat-label>
-          <input matInput placeholder="" value="" rows="5">
-      </mat-form-field>
-       </div>
-       <div class="w-50 m-1">
-        <mat-form-field class="example-full-width">
-          <mat-label>Expiry date</mat-label>
-          <input matInput placeholder="" value="" rows="5" type="date">
-      </mat-form-field>
-       </div>
-    </div>
- </div>
-
- <div class="m-2">
-  <mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
-      <input matInput placeholder="" value="" rows="5">
-  </mat-form-field>
-</div>
-
 <div class="m-2">
-  <mat-form-field class="example-full-width">
-      <mat-label>Alternative Email</mat-label>
-      <input matInput placeholder="" value="" rows="5">
-  </mat-form-field>
-</div>
-
-<div>
-  <div class="image-upload m-4">
-      <label style="cursor: pointer;" for="file_upload">
-        <img src="" alt="" class="uploaded-image">
-        <div class="h-100">
-               <div class="dplay-tbl">
-                <div class="dplay-tbl-cell">
-                    <i class="fa fa-cloud-upload"></i>
-                    <h5><b>Choose Your Photo</b></h5>
-                    <h6 class="mt-10 mb-70">Or Drop Your File Here</h6>
-                </div>
-            </div>
-        </div>
-        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
-         </label>
-    </div>
-</div>
-
-<div>
-  <div class="image-upload m-4">
-      <label style="cursor: pointer;" for="file_upload">
-        <img src="" alt="" class="uploaded-image">
-        <div class="h-100">
-               <div class="dplay-tbl">
-                <div class="dplay-tbl-cell">
-                    <i class="fa fa-cloud-upload"></i>
-                    <h5><b>Choose Your AADHAR, PAN, Educational Documents</b></h5>
-                    <h6 class="mt-10 mb-70">Or Drop Your File Here</h6>
-                </div>
-            </div>
-        </div>
-        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
-         </label>
-    </div>
-</div>
-</div>
-<div class="m-2">
-  <mat-radio-group aria-label="Select an option">
+  <mat-radio-group required="true" rearia-label="Select an option">
     <mat-label>Currently Employed</mat-label>&nbsp;&nbsp;
     <mat-radio-button value="1" color="primary">Yes</mat-radio-button>&nbsp;&nbsp;
     <mat-radio-button value="2" color="primary">No</mat-radio-button><br><br>
@@ -102,7 +21,7 @@
 </div>
 
 <div class="m-2">
-  <mat-radio-group aria-label="Select an option">
+  <mat-radio-group  aria-label="Select an option">
     <mat-label>Immediate Joiner</mat-label>&nbsp;&nbsp;
     <mat-radio-button value="1" color="primary">Yes</mat-radio-button>&nbsp;&nbsp;
     <mat-radio-button value="2" color="primary">No</mat-radio-button><br><br>
@@ -110,165 +29,54 @@
   </mat-radio-group></div>
 
   <div class="m-2">
-    <mat-form-field class="example-full-width">
+    <mat-form-field  class="example-full-width">
         <mat-label>Mother Tongue</mat-label>
-        <input matInput placeholder="" value="" rows="5">
+        <mat-select required="true">
+          <mat-option *ngFor="let language of languages" [value]="language.value">
+          {{language.viewValue}}
+          </mat-option>
+      </mat-select>
     </mat-form-field>
-
-    <mat-radio-group aria-label="Select an option">
-      <mat-label><b>Read :</b></mat-label>&nbsp;&nbsp;&nbsp;
-      <mat-radio-button color="primary" value="1" >
-         <!-- <img  src="assets/images/single.png"> -->
-         Basic</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
-      <mat-radio-button color="primary" value="2">
-        <!-- <img  src="assets/images/married.png"> -->
-        Average</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
-        <mat-radio-button color="primary" value="3">
-          <!-- <img  src="assets/images/married.png"> -->
-          Fluent</mat-radio-button><br><br>
-
-        </mat-radio-group>
-        <mat-radio-group aria-label="Select an option">
-          <mat-label><b>Write :</b></mat-label>&nbsp;&nbsp;&nbsp;
-          <mat-radio-button color="primary" value="1" >
-             <!-- <img  src="assets/images/single.png"> -->
-             Basic</mat-radio-button>&nbsp;&nbsp;&nbsp;
-          <mat-radio-button color="primary" value="2">
-            <!-- <img  src="assets/images/married.png"> -->
-            Average</mat-radio-button>&nbsp;&nbsp;&nbsp;
-            <mat-radio-button color="primary" value="3">
-              <!-- <img  src="assets/images/married.png"> -->
-              Fluent</mat-radio-button><br><br>
-
-            </mat-radio-group>
-            <mat-radio-group aria-label="Select an option">
-              <mat-label><b>Speak :</b></mat-label>&nbsp;&nbsp;&nbsp;
-              <mat-radio-button color="primary" value="1" >
-                 <!-- <img  src="assets/images/single.png"> -->
-                 Basic</mat-radio-button>&nbsp;&nbsp;&nbsp;
-              <mat-radio-button color="primary" value="2">
-                <!-- <img  src="assets/images/married.png"> -->
-                Average</mat-radio-button>&nbsp;&nbsp;&nbsp;
-                <mat-radio-button color="primary" value="3">
-                  <!-- <img  src="assets/images/married.png"> -->
-                  Fluent</mat-radio-button>&nbsp;&nbsp;&nbsp;
-
-                </mat-radio-group>
-
   </div>
 
   <div class="m-2">
     <mat-form-field class="example-full-width">
         <mat-label>Other Languages</mat-label>
-        <input matInput placeholder="" value="" rows="5">
+        <mat-select multiple>
+          <mat-option *ngFor="let language of languages" [value]="language.value">
+          {{language.viewValue}}
+          </mat-option>
+      </mat-select>
     </mat-form-field>
-
-
-    <mat-radio-group aria-label="Select an option">
-      <mat-label><b>Read :</b></mat-label>&nbsp;&nbsp;&nbsp;
-      <mat-radio-button color="primary" value="1" >
-         <!-- <img  src="assets/images/single.png"> -->
-         Basic</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
-      <mat-radio-button color="primary" value="2">
-        <!-- <img  src="assets/images/married.png"> -->
-        Average</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;
-        <mat-radio-button color="primary" value="3">
-          <!-- <img  src="assets/images/married.png"> -->
-          Fluent</mat-radio-button><br><br>
-
-        </mat-radio-group>
-        <mat-radio-group aria-label="Select an option">
-          <mat-label><b>Write :</b></mat-label>&nbsp;&nbsp;&nbsp;
-          <mat-radio-button color="primary" value="1" >
-             <!-- <img  src="assets/images/single.png"> -->
-             Basic</mat-radio-button>&nbsp;&nbsp;&nbsp;
-          <mat-radio-button color="primary" value="2">
-            <!-- <img  src="assets/images/married.png"> -->
-            Average</mat-radio-button>&nbsp;&nbsp;&nbsp;
-            <mat-radio-button color="primary" value="3">
-              <!-- <img  src="assets/images/married.png"> -->
-              Fluent</mat-radio-button><br><br>
-
-            </mat-radio-group>
-            <mat-radio-group aria-label="Select an option">
-              <mat-label><b>Speak :</b></mat-label>&nbsp;&nbsp;&nbsp;
-              <mat-radio-button color="primary" value="1" >
-                 <!-- <img  src="assets/images/single.png"> -->
-                 Basic</mat-radio-button>&nbsp;&nbsp;&nbsp;
-              <mat-radio-button color="primary" value="2">
-                <!-- <img  src="assets/images/married.png"> -->
-                Average</mat-radio-button>&nbsp;&nbsp;&nbsp;
-                <mat-radio-button color="primary" value="3">
-                  <!-- <img  src="assets/images/married.png"> -->
-                  Fluent</mat-radio-button>&nbsp;&nbsp;&nbsp;
-
-                </mat-radio-group>
   </div>
-
+</mat-card>
+<br>
+<mat-card>
   <div class="m-2">
     <mat-label class="References_lable">Professional References</mat-label><br>
-    <mat-label class="References_lable2">References 1</mat-label>
     <mat-form-field class="example-full-width">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="" value="" rows="5">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="" value="" rows="5">
     </mat-form-field>
     <mat-form-field class="example-full-width">
       <mat-label>Company Name</mat-label>
       <input matInput placeholder="" value="" rows="5">
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Mobile number</mat-label>
-    <input matInput placeholder="" value="" rows="5">
-</mat-form-field>
-<mat-form-field class="example-full-width">
-  <mat-label>Email</mat-label>
-  <input matInput placeholder="" value="" rows="5">
-</mat-form-field>
-  </div>
-
-  <div class="m-2">
-
-    <mat-label class="References_lable2">References 2</mat-label>
-    <mat-form-field class="example-full-width">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="" value="" rows="5">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <mat-label>Company Name</mat-label>
+      <mat-label>Mobile number</mat-label>
       <input matInput placeholder="" value="" rows="5">
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Mobile number</mat-label>
-    <input matInput placeholder="" value="" rows="5">
-</mat-form-field>
-<mat-form-field class="example-full-width">
-  <mat-label>Email</mat-label>
-  <input matInput placeholder="" value="" rows="5">
-</mat-form-field>
-  </div>
-
-  <div class="m-2">
-
-    <mat-label class="References_lable2">References 3</mat-label>
-    <mat-form-field class="example-full-width">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="" value="" rows="5">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <mat-label>Company Name</mat-label>
+      <mat-label>Email</mat-label>
       <input matInput placeholder="" value="" rows="5">
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Mobile number</mat-label>
-    <input matInput placeholder="" value="" rows="5">
-</mat-form-field>
-<mat-form-field class="example-full-width">
-  <mat-label>Email</mat-label>
-  <input matInput placeholder="" value="" rows="5">
-</mat-form-field>
+    </mat-form-field>
   </div>
+</mat-card>
+<br>
+
+
 
   <div class="d-flex justify-content-center">
-    <button mat-flat-button color="primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button type="button" [routerLink]="['/preview-pdf']" class="btn btn-warning">Submit</button>
+    <button mat-flat-button class="button"matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" [routerLink]="['/preview-pdf']" class="button">Submit</button>
   </div>

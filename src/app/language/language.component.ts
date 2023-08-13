@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-language',
@@ -7,15 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit(): void {
   }
 
   highlightedCard: number = 0;
 
-  highlightCard(cardNumber: number) {
+  highlightCard(cardNumber: number, language: string) {
     this.highlightedCard = cardNumber;
+    this.languageService.setLanguage(language);
   }
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},

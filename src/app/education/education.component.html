@@ -1,35 +1,41 @@
-<h1>Education And Qualification</h1>
-<div class="row m-1 text-center">
-  <div class="m-2">
-    <mat-form-field>
-    <mat-label>Education level</mat-label>
-    <mat-select>
-        <mat-option *ngFor="let education_level of education_level" [value]="education_level.value">
-        {{education_level.viewValue}}
-        </mat-option>
-    </mat-select>
-    </mat-form-field>
-</div>
+<br>
+<mat-card>
+  <h1>Educational Qualification</h1>
+  <div class="row m-1 text-center">
+    <div class="m-2">
+      <mat-form-field>
+      <mat-label>Education level</mat-label>
+      <mat-select required="true">
+          <mat-option *ngFor="let education_level of education_level" [value]="education_level.value">
+          {{education_level.viewValue}}
+          </mat-option>
+      </mat-select>
+      </mat-form-field>
+    </div>
 
-<div class="m-2">
-  <mat-form-field class="example-full-width">
-    <mat-label>Name of the College / ITI / Institute</mat-label>
-    <input type="text" placeholder="Name of the College / ITI / Institute" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
-    <mat-autocomplete #auto="matAutocomplete">
-      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-        {{option}}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</div>
+    <div class="m-2">
+      <mat-form-field class="example-full-width">
+        <mat-label>Name of the College / ITI / Institute</mat-label>
+        <input type="text" placeholder="Name of the College / ITI / Institute" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
 
-<div class="m-2">
-  <mat-form-field class="example-full-width">
-      <mat-label>Name of Diploma / Degree</mat-label>
-      <input matInput placeholder="" value="">
-  </mat-form-field>
-</div>
+    <div class="m-2">
+      <mat-form-field class="example-full-width">
+          <mat-label>Name of Diploma / Degree</mat-label>
+          <input matInput placeholder="" value="">
+      </mat-form-field>
+    </div>
+  </div>
+</mat-card>
 
+<br>
+<mat-card>
 <div class="m-2">
   <mat-form-field class="example-full-width">
       <mat-label>Achievement / Awards</mat-label>
@@ -39,7 +45,7 @@
 
  <div class="m-2">
   <mat-form-field>
-  <mat-label>Certificate Name</mat-label>
+  <mat-label>Document Type</mat-label>
   <mat-select>
       <mat-option *ngFor="let certificate of certificate" [value]="certificate.value">
       {{certificate.viewValue}}
@@ -85,10 +91,11 @@
       </div>
 
 </div>
-
+</mat-card>
+<br>
 <div class="d-flex justify-content-center">
-  <button type="button" class="btn btn-primary" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button type="button" class="btn btn-warning" matStepperNext>Next</button>
+  <button type="button" class="button" matStepperPrevious>Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="button" matStepperNext>Next</button>
 </div>
 
 

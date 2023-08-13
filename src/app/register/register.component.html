@@ -1,91 +1,74 @@
-<h1>About Me</h1>
-<div class="ml-4">
-<div style="margin:8%;margin-left: 5%;">
-    <div class="m-2">
-        <mat-form-field>
-        <mat-label>Title</mat-label>
-        <mat-select>
-            <mat-option *ngFor="let person_title of person_title" [value]="person_title.value">
-            {{person_title.viewValue}}
-            </mat-option>
-        </mat-select>
-        </mat-form-field>
-    </div>
+<br>
+<mat-card>
+  <h1>About Me</h1>
+  <div class="ml-4">
+  <div style="margin:8%;margin-left: 5%;">
+      <div class="m-2">
+          <mat-form-field>
+          <mat-label>Title</mat-label>
+          <mat-select required="true">
+              <mat-option *ngFor="let person_title of person_title" [value]="person_title.value">
+              {{person_title.viewValue}}
+              </mat-option>
+          </mat-select>
+          </mat-form-field>
+      </div>
 
-    <div class="m-2">
+      <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+      </div>
+
+      <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Phone Number</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+      </div>
+
+      <div class="m-2">
         <mat-form-field class="example-full-width">
-            <mat-label>Name</mat-label>
+            <mat-label>Alternative Phone Number</mat-label>
             <input matInput placeholder="" value="">
         </mat-form-field>
     </div>
 
-    <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>Phone Number</mat-label>
-            <input matInput placeholder="" value="">
-        </mat-form-field>
-    </div>
+      <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="" value="">
+          </mat-form-field>
+      </div>
 
-    <div class="m-2">
-      <mat-form-field class="example-full-width">
-          <mat-label>Alternative Phone Number</mat-label>
-          <input matInput placeholder="" value="">
-      </mat-form-field>
+      <div class="m-2">
+        <mat-label>Date of Birth</mat-label>
+          <mat-form-field class="example-full-width">
+
+              <input matInput placeholder="" value="" required="true" type="date">
+          </mat-form-field>
+      </div>
+
   </div>
-
-    <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>Email</mat-label>
-            <input matInput placeholder="" value="">
-        </mat-form-field>
-    </div>
-
-    <div class="m-2">
-      <mat-label>Date of Birth</mat-label>
-        <mat-form-field class="example-full-width">
-
-            <input matInput placeholder="" value="" type="date">
-        </mat-form-field>
-    </div>
-
-    <div class="m-2">
-      <mat-form-field>
-      <mat-label>Blood Group</mat-label>
-      <mat-select>
-          <mat-option *ngFor="let blood_group of blood_group" [value]="blood_group.value">
-          {{blood_group.viewValue}}
-          </mat-option>
-      </mat-select>
-      </mat-form-field>
-  </div>
-
-
-    <div class="m-2">
-        <mat-form-field>
-        <mat-label>Physical fitness status</mat-label>
-        <mat-select>
-            <mat-option *ngFor="let person_fit of person_fit" [value]="person_fit.value">
-            {{person_fit.viewValue}}
-            </mat-option>
-        </mat-select>
-        </mat-form-field>
-    </div>
 </div>
 
-    <div class="row m-2" style="text-align:center">
-      <mat-radio-group aria-label="Select an option">
+</mat-card>
+
+    <!-- <div class="row m-2" style="text-align:center">
+      <mat-radio-group aria-label="Select an option" required="true">
           <mat-radio-button color="primary" value="1" >
-             <!-- <img  src="assets/images/single.png"> -->
+            <img  src="assets/images/single.png">
            Single</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <mat-radio-button color="primary" value="2">
-            <!-- <img  src="assets/images/married.png"> -->
+            <img  src="assets/images/married.png">
              Married</mat-radio-button>
             </mat-radio-group>
     </div><br>
 
     <div class="row m-2 gender" style="text-align:center">
-      <mat-radio-group aria-label="Select an option">
-          <mat-radio-button color="primary" value="1" >
+      <mat-radio-group aria-label="Select an option" >
+          <mat-radio-button color="primary" value="1">
 
             Male</mat-radio-button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <mat-radio-button color="primary" value="2">
@@ -94,86 +77,82 @@
               Others</mat-radio-button>
 
             </mat-radio-group>
-    </div>
-
+    </div> -->
+    <br>
+<mat-card>
     <div class="ml-4">
       <div style="margin:8%;margin-left: 5%;">
         <mat-label class="References_lable2">Address</mat-label>
-    <div class="m-2">
-      <mat-form-field class="example-full-width">
-          <mat-label>Apartment / Flat / House No</mat-label>
-          <input matInput placeholder="" value="">
-      </mat-form-field>
-  </div>
+        <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Apartment / Flat / House No</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+        </div>
 
         <div class="m-2">
           <mat-form-field class="example-full-width">
               <mat-label>Street Name</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+        </div>
+        <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>District Name</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+        </div>
+
+        <div class="m-2">
+          <mat-form-field>
+            <mat-label>Village/Town/City</mat-label>
+            <mat-select [formControl]="pokemonControl" required="true">
+              <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name"
+                            [disabled]="group.disabled">
+                <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value">
+                  {{pokemon.viewValue}}
+                </mat-option>
+              </mat-optgroup>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="m-2">
+          <mat-form-field>
+          <mat-label>State</mat-label>
+          <mat-select required="true">
+              <mat-option *ngFor="let state of state" [value]="state.value">
+              {{state.viewValue}}
+              </mat-option>
+          </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Country</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+        </div>
+
+        <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Pincode</mat-label>
+              <input matInput placeholder="" required="true" value="">
+          </mat-form-field>
+        </div>
+
+        <div class="m-2">
+          <mat-form-field class="example-full-width">
+              <mat-label>Landmark</mat-label>
               <input matInput placeholder="" value="">
           </mat-form-field>
-      </div>
-      <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>District Name</mat-label>
-            <input matInput placeholder="" value="">
-        </mat-form-field>
-      </div>
+        </div>
 
-      <div class="m-2">
-        <mat-form-field>
-          <mat-label>Cities</mat-label>
-          <mat-select [formControl]="pokemonControl">
-            <mat-option>-- None --</mat-option>
-            <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name"
-                          [disabled]="group.disabled">
-              <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value">
-                {{pokemon.viewValue}}
-              </mat-option>
-            </mat-optgroup>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div class="m-2">
-        <mat-form-field>
-        <mat-label>State</mat-label>
-        <mat-select>
-            <mat-option *ngFor="let state of state" [value]="state.value">
-            {{state.viewValue}}
-            </mat-option>
-        </mat-select>
-        </mat-form-field>
-    </div>
-
-      <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>Country</mat-label>
-            <input matInput placeholder="" value="">
-        </mat-form-field>
-      </div>
-
-      <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>Pincode</mat-label>
-            <input matInput placeholder="" value="">
-        </mat-form-field>
-      </div>
-
-      <div class="m-2">
-        <mat-form-field class="example-full-width">
-            <mat-label>Landmark</mat-label>
-            <input matInput placeholder="" value="">
-        </mat-form-field>
-      </div>
-
-
-
-
-
-
-    <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-warning" matStepperNext>Next</button>
     </div>
 </div>
-</div>
+</mat-card>
+<br>
+<div class="d-flex justify-content-center">
+  <button type="button" class="button" matStepperNext>Next</button>
 </div>
