@@ -3,8 +3,8 @@
   <h1>About Me</h1>
   <div class="ml-4">
   <div style="margin:8%;margin-left: 5%;">
-      <div class="m-2">
-          <mat-form-field>
+      <div class="m-2" >
+          <mat-form-field style="position: absolute;width: 15%;">
           <mat-label>Title</mat-label>
           <mat-select required="true">
               <mat-option *ngFor="let person_title of person_title" [value]="person_title.value">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="m-2">
-          <mat-form-field class="example-full-width">
+          <mat-form-field class="example-full-width" style="right: -24%;width: 75%;">
               <mat-label>Name</mat-label>
               <input matInput placeholder="" required="true" value="">
           </mat-form-field>
